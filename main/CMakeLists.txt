@@ -30,6 +30,7 @@ set(SOURCES "audio/audio_codec.cc"
             "display/lvgl_display/gif/lvgl_gif.cc"
             "display/lvgl_display/gif/gifdec.c"
             "display/lvgl_display/jpg/image_to_jpeg.cpp"
+            "display/fonts/lv_font_ds_digitb_48.c"
             "protocols/protocol.cc"
             "protocols/mqtt_protocol.cc"
             "protocols/websocket_protocol.cc"
@@ -75,8 +76,8 @@ if(CONFIG_BOARD_TYPE_XIAOZHI_AI_IOT_VIETNAM_ES3N28P_LCD_2_8)
     set(BUILTIN_TEXT_FONT font_puhui_basic_20_4)
     set(BUILTIN_ICON_FONT font_awesome_20_4)
     set(DEFAULT_EMOJI_COLLECTION twemoji_32)
-elseif(CONFIG_BOARD_TYPE_XIAOZHI_AI_IOT_VIETNAM_LCD_SDCARD)
-    set(BOARD_TYPE "xiaozhi-ai-iot-vietnam-lcd-sdcard")
+elseif(CONFIG_BOARD_TYPE_XIAOZHI_AI_IOT_VIETNAM_DTD)
+    set(BOARD_TYPE "xiaozhi-ai-iot-vietnam-dtd")
     set(BUILTIN_TEXT_FONT font_puhui_basic_16_4)
     set(BUILTIN_ICON_FONT font_awesome_16_4)
     set(DEFAULT_EMOJI_COLLECTION twemoji_32)
@@ -568,6 +569,16 @@ elseif(CONFIG_BOARD_TYPE_AIPI_LITE)
     set(BUILTIN_TEXT_FONT font_puhui_basic_14_1)
     set(BUILTIN_ICON_FONT font_awesome_14_1)
     set(DEFAULT_EMOJI_COLLECTION twemoji_32)
+elseif(CONFIG_BOARD_TYPE_ZHENGCHEN_CAM)
+    set(BOARD_TYPE "zhengchen-cam")
+    set(BUILTIN_TEXT_FONT font_puhui_basic_20_4)
+    set(BUILTIN_ICON_FONT font_awesome_20_4)
+    set(DEFAULT_EMOJI_COLLECTION twemoji_64)
+elseif(CONFIG_BOARD_TYPE_ZHENGCHEN_CAM_ML307)
+    set(BOARD_TYPE "zhengchen-cam-ml307")
+    set(BUILTIN_TEXT_FONT font_puhui_basic_20_4)
+    set(BUILTIN_ICON_FONT font_awesome_20_4)
+    set(DEFAULT_EMOJI_COLLECTION twemoji_64)
 endif()
 
 file(GLOB BOARD_SOURCES
