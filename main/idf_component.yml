@@ -21,7 +21,6 @@ dependencies:
   78/esp_lcd_nv3023: ~1.0.0
   VERSION_esp-wifi-connect:
     git: https://github.com/thanhrong94207/esp-wifi-connect.git
-    version: "v1.0.1"
   TienHuyIoT_esp_lcd_touch_xpt2046:
     git: https://github.com/TienHuyIoT/esp_lcd_touch_xpt2046.git
     version: "v1.0.7"
@@ -50,9 +49,6 @@ dependencies:
   espressif/esp_lcd_touch_cst816s: ^1.1.1
   espressif/esp_lcd_touch: ^1.1.2
   atanisoft/esp_lcd_touch_xpt2046: ^1.0.6
-  esp_lcd_touch_xpt2046:
-    git: https://github.com/atanisoft/esp_lcd_touch_xpt2046.git
-    version: "1.0.6"
   lvgl/lvgl: ~9.3.0
   esp_lvgl_port: ~2.6.0
   espressif/esp_io_expander_tca95xx_16bit: ^2.0.0
